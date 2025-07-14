@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About me</title>
+</head>
+<body>
+  <header>
+    <h1>Меня зовут kas</h1>
+    <p>И это мой первый сайт обо мне</p>
+    <nav>
+      <a href="#about">Обо мне</a>
+      <a href="#skills">Навыки</a>
+      <a href="#contacts">Контакты</a>
+      <a href="#contacts_form">Форма для обращения</a>
+    </nav>
+    <section id = "about">
+        <h2>Я, кас и это сайт мой первый сайт про мня</h2>
+      </section>
+      <section id="skills">
+        <h2>Навыки</h2>
+        <ul>
+          <li>HTML</li>
+          <li>CSS(скоро)</li>
+          <li>Git</li>
+          <li>JavaScript(в будущем)</li>
+        </ul>
+        
+      </section>
+    <section id="table">
+      <table border = "1" style = "border-collapse: collapse;
+  text-align: center;">
+        <tr>
+          <th>День</th>
+          <th>Тема</th>
+          <th>Прогресс</th>
+        </tr>
+        <tr>
+          <th>Понедельник</th>
+          <th>HTML</th>
+          <th>✓</th>
+        </tr>
+        <tr>
+          <th>Вторник</th>
+          <th>Семантика</th>
+          <th>✓</th>
+        </tr>
+        <tr>
+          <th>Среда</th>
+          <th>Формы</th>
+          <th>✓</th>
+        </tr>
+        <tr>
+          <th>Четверг</th>
+          <th>Таблицы</th>
+          <th>🔄</th>
+        </tr>
+      </table>
+    </section>
+    <section id="gallery">
+      <h3>Галерея</h3>
+      <img src="https://memetopia.ru/uploads/admin/images/meme-templates/WzleNc56lFS9fEkpR9HkezauURCfNnbM.jpg" alt="умный человек скачать обои" width = 200px> 
+        <img src="https://i.pinimg.com/736x/ff/1b/bf/ff1bbffc7465d6799b47f1686a424d86.jpg" alt="kitya" width = 200px>
+    </section>
+    <footer id = "contacts">
+      <a href="https://web.telegram.org/">Telegram</a>
+      <a href="https://vk.com">VK</a>
+      <a href="https://youtube.com">YouTube</a>
+      <a href="https://github.com">Github</a>
+      <section id="contacts_form">
+         <h2>Связаться со мной</h2>
+        
+        <form action="#" id = contacts_form>
+         <select name="contacts_data" id="contacts_data">
+           <option value="men">Мужчина</option>
+           <option value="women">Женщина</option>
+          </select>
+          <br>
+          <label for="name">Имя:</label>
+          <input type="text" id = "name" placeholder = "Введите имя" required><br>
+          <label for="email">Почта:</label>
+          <input type="email" id = "email" placeholder = "Введите почту" required><br>
+          <label for="message">Сообщение:</label>
+          <textarea type="text" id = "message" placeholder = "Введите сообщение"></textarea><br>
+          <button type = "submit">Отправить</button><br>
+          <label for="check"><input type="checkbox">Согласен с обработкой данных</label>
+        </form>
+      </section>
+      <p>©2025 Все права защищеныю</p>
+    </footer>
+  </header>
+</body>
+</html>
