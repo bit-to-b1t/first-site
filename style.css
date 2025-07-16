@@ -1,14 +1,20 @@
+:root{
+  --main-color: #0066cc;
+  --accent-color: e0f0ff;
+  --text-color: #333;
+  --bg-color: #f9f9f9
+}
+
 body{
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 14px;
-  background-color: #f4f4f4;
-  color: #333;
+  background-color: var(--bg-color);
+  color: var(--text-color);
   line-height: 1.6;
   padding: 20px;
+  color: var(--text-color);
 }
-h1{
-  color: #0066cc;
-}
+
 p{
   font-size: 18px;
 }
@@ -17,15 +23,6 @@ p{
   border-bottom: 2px solid #ccc;
   margin-bottom: 10px;
   padding-bottom: 5px;
-}
-a{
-  color: #0066cc;
-  text-decoration: none;
-  transition: .2s ease;
-}
-a:hover{
-  text-decoration: underline;
-  color: #003399;
 }
 table{
   border: 1px solid #ccc;
@@ -39,6 +36,10 @@ section{
   margin-bottom: 30px;
   border-radius: 10px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform .3s ease;
+}
+section:hover{
+  trasform: translateY(-3px);
 }
 nav ul{
   display: flex;
@@ -62,4 +63,28 @@ header, footer{
 .gallery img{
   width: 150px;
   border-radius: 6px;
+}
+button{
+  background-color: var(--main-color);
+  color: white;
+  padding: 12px 24px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+button:hover {
+  background-color: #004499;
+}
+h1, h2{
+  color: var(--main-color);
+}
+a{
+  color: var(--main-color);
+  text-decoration: none;
+  transition: color .3s ease;
+}
+a:hover{
+  color: #004c99;
 }
