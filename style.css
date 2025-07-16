@@ -1,12 +1,12 @@
 :root{
   --main-color: #0066cc;
-  --accent-color: e0f0ff;
+  --accent-color: #e0f0ff;
   --text-color: #333;
   --bg-color: #f9f9f9
 }
 
 body{
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 14px;
   background-color: var(--bg-color);
   color: var(--text-color);
