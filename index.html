@@ -5,68 +5,21 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About me</title>
-  
-  <style>
-    body{
-      font-family: Arial, sans-serif;
-      font-size: 14px;
-      background-color: #f4f4f4;
-      color: #333;
-      line-height: 1.6;
-      padding: 20px;
-    }
-    h1{
-      color: #0066cc;
-    }
-    p{
-      font-size: 18px;
-    }
-    .section-title{
-      font-size: 24px;
-      border-bottom: 2px solid #ccc;
-      margin-bottom: 10px;
-      padding-bottom: 5px;
-    }
-    a{
-      color: #0066cc;
-      text-decoration: none;
-      transition: .2s ease;
-    }
-    a:hover{
-      text-decoration: underline;
-      color: #003399;
-    }
-    section{
-      margin-bottom: 40px;
-    }
-    button{
-      background-color: #0066cc;
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      cursor: pointer;
-      font-weight: bold;
-      border-radius: 4px;
-      transition: .2s ease;
-    }
-    button:hover{
-      background-color: #004c99;
-    }
-  </style>
-  
-  
 </head>
 <body>
   <header>
     <h1>Меня зовут bit</h1>
     <p>И это мой первый сайт обо мне</p>
     <nav>
-      <a href="#about">Обо мне</a>
-      <a href="#skills">Навыки</a>
-      <a href="#contacts">Контакты</a>
-      <a href="#contacts_form">Форма для обращения</a>
+      <ul>
+        <li><a href="#about">Обо мне</a></li>
+        <li><a href="#skills">Навыки</a></li>
+        <li><a href="#contacts">Контакты</a></li>
+        <li><a href="#contacts_form">Форма для обращения</a></li>
+      </ul>
     </nav>
-    <main>
+  </header>
+  <main>
     <section id = "about">
         <h2 class = "section-title">Я, bit и это сайт мой первый сайт про мня</h2>
       </section>
@@ -77,13 +30,11 @@
           <li>CSS(скоро)</li>
           <li>Git</li>
           <li>JavaScript(в будущем)</li>
-        </ul>
-        
+        </ul> 
       </section>
       
     <section id="table">
-      <table border = "1" style = "border-collapse: collapse;
-  text-align: center;">
+      <table border = "1">
         <tr>
           <th>День</th>
           <th>Тема</th>
@@ -113,15 +64,14 @@
     </section>
     <section id="gallery">
       <h3>Галерея</h3>
-      <img src="https://memetopia.ru/uploads/admin/images/meme-templates/WzleNc56lFS9fEkpR9HkezauURCfNnbM.jpg" alt="умный человек скачать обои" width = 200px> 
-        <img src="https://i.pinimg.com/736x/ff/1b/bf/ff1bbffc7465d6799b47f1686a424d86.jpg" alt="kitya" width = 200px>
+      <div class="gallery">
+      <img src="https://memetopia.ru/uploads/admin/images/meme-templates/WzleNc56lFS9fEkpR9HkezauURCfNnbM.jpg" alt="умный человек скачать обои"> 
+        <img src="https://i.pinimg.com/736x/ff/1b/bf/ff1bbffc7465d6799b47f1686a424d86.jpg" alt="kitya">
+        </div>
     </section>
       </main>
     <footer id = "contacts">
-      <a href="https://web.telegram.org/">Telegram</a>
-      <a href="https://vk.com">VK</a>
-      <a href="https://youtube.com">YouTube</a>
-      <a href="https://github.com">Github</a>
+      
       <section id="contacts_form">
          <h2>Связаться со мной</h2>
         
@@ -141,8 +91,14 @@
           <label for="check"><input type="checkbox">Согласен с обработкой данных</label>
         </form>
       </section>
-      <p>©2025 Все права защищеныю</p>
+      <section id = "contacts-link">
+        <h2>Ссылки для контактов</h2>
+        <a href="https://web.telegram.org/">Telegram</a>
+      <a href="https://vk.com">VK</a>
+      <a href="https://youtube.com">YouTube</a>
+      <a href="https://github.com">Github</a>
+      </section>
+      <p>©2025 Все права защищены</p>
     </footer>
-  </header>
 </body>
 </html>
