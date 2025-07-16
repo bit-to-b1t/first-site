@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
   <title>About me</title>
 </head>
 <body>
@@ -80,15 +80,15 @@
          <h2>Связаться со мной</h2>
         
         <form action="#" id = contacts_form>
-         <select name="contacts_data" id="contacts_data">
-           <option value="men">Мужчина</option>
-           <option value="women">Женщина</option>
-          </select>
-          <br>
           <label for="name">Имя:</label>
           <input type="text" id = "name" placeholder = "Введите имя" required><br>
           <label for="email">Почта:</label>
           <input type="email" id = "email" placeholder = "Введите почту" required><br>
+          <select name="contacts_data" id="contacts_data">
+           <option value="men">Мужчина</option>
+           <option value="women">Женщина</option>
+          </select>
+          <br>
           <label for="message">Сообщение:</label>
           <textarea type="text" id = "message" placeholder = "Введите сообщение"></textarea><br>
           <button type = "submit">Отправить</button><br>
