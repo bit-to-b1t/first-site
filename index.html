@@ -80,19 +80,23 @@
          <h2>Связаться со мной</h2>
         
         <form action="#" id = contacts_form>
-          <label for="name">Имя:</label>
-          <input type="text" id = "name" placeholder = "Введите имя" required><br>
-          <label for="email">Почта:</label>
-          <input type="email" id = "email" placeholder = "Введите почту" required><br>
-          <select name="contacts_data" id="contacts_data">
-           <option value="men">Мужчина</option>
-           <option value="women">Женщина</option>
+          <label for="name">Имя</label>
+          <input type="text" class = "name" id = "name" required>
+          <br>
+          <label for="email">email</label>
+          <input type="eamil" class = "email" id = "email" required>
+          <br>
+          <label for="subject">Тема сообщения</label>
+          <select name="subjects" id="subjects" required>
+            <option value="question">Вопрос</option>
+            <option value="order">Заказ</option>
+            <option value="proposal">Предложение</option>
           </select>
           <br>
-          <label for="message">Сообщение:</label>
-          <textarea type="text" id = "message" placeholder = "Введите сообщение"></textarea><br>
-          <button type = "submit">Отправить</button><br>
-          <label for="check"><input type="checkbox">Согласен с обработкой данных</label>
+          <label for="message">Сообщение</label>
+          <textarea name="message" id="messge" cols="20" required></textarea>
+          <br>
+          <button type = "submut">Отправить</button>
         </form>
       </section>
       <section id = "contacts-link">
@@ -104,5 +108,6 @@
       </section>
       <p>©2025 Все права защищены</p>
     </footer>
+  <script src = "script.js"></script>
 </body>
 </html>
