@@ -95,6 +95,10 @@ a:hover{
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
 }
+.dark-theme{
+  background-color: #111;
+  color: #eee;
+}
 @media (max-width: 768px){
   nav{
     flex-direction: column;
